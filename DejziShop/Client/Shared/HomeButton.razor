@@ -1,0 +1,13 @@
+﻿@inject NavigationManager NavigationManager
+
+<button @onclick="GoToHome"
+        class="">
+    <img src="../Logo2.png" width="100px" style="margin-right:10px;"/>
+</button>
+
+@code {
+    private void GoToHome()
+    {
+        NavigationManager.NavigateTo("");
+    }
+}
