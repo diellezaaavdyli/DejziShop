@@ -28,10 +28,15 @@ img {
 }
 .featured-product .price{
     color:red;
+    font-size:15px;
 }
 
 @media (max-width: 1023.98px) {
     .container {
         justify-content: flex-start;
     }
+}
+
+.loading-products{
+    height:100vh;
 }

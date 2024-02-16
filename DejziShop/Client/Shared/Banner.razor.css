@@ -1,0 +1,7 @@
+﻿.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 16%, rgba(0,0,0,1) 26%, rgba(186,23,114,1) 89%);
+}
+.banner h1, h2, h3, h4, h5{
+    color:white;
+}

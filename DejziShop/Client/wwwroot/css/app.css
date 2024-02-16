@@ -95,7 +95,7 @@ a, .btn-link {
   
 }
 .sale-h2{
-    border:2px solid red;
+    
 }
 .top-row{
     background-color:black !important;
@@ -125,7 +125,6 @@ a, .btn-link {
     color: black;
 }
 .featured-product img{
-    border: 2px solid black;
     border-radius: 0px !important;
     max-width:280px !important;
     max-height:280px !important;

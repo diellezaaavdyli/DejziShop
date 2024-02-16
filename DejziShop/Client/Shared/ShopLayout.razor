@@ -1,5 +1,21 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
 
+@code {
+    string currentUrl;
+
+    protected override void OnInitialized()
+    {
+        currentUrl = NavigationManager.Uri;
+    }
+
+    protected override void OnParametersSet()
+    {
+        currentUrl = NavigationManager.Uri;
+    }
+}
+
+  
 <div class="page">
     <main>
         <div class="top-row px-2">
@@ -7,18 +23,23 @@
             <Search />
             <UserButton />
             <CartCounter />
-        </div>
 
+        </div>
+           
         <div class="nav-menu">
             <ShopNavMenu />
         </div>
-
+        @if (@currentUrl[currentUrl.Length - 1] == '/')
+        {
+            <Banner />
+        }
         <article class="content px-2">
             @Body
         </article>
         <LastSection />
     </main>
 </div>
+
 
 <MudThemeProvider/>
 <MudDialogProvider/>
