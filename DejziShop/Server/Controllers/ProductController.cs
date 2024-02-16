@@ -55,6 +55,7 @@ namespace DejziShop.Server.Controllers
         {
             var result = await _productService.GetProductAsync(productId);
             return Ok(result);
+
         }
 
         [HttpGet("category/{categoryUrl}")]
