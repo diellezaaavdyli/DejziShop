@@ -29,3 +29,14 @@
         height: auto;
     }
 }
+
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 5%;
+
+}
