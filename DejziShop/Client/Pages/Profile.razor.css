@@ -1,0 +1,9 @@
+﻿.AccountDetails {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

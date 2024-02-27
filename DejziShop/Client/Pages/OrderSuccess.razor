@@ -1,11 +1,14 @@
 ﻿@page "/order-success"
 @inject ICartService CartService
 
+<section class="OrderSuccess">
 <PageTitle>Thank you!</PageTitle>
 
 <h3>Thank you!</h3>
 
 <span>Thank you for your order! You can check your orders <a href="orders">here</a>.</span>
+
+</section>
 
 @code {
     protected override async Task OnInitializedAsync()

@@ -1,6 +1,7 @@
 ﻿@page "/orders"
 @inject IOrderService OrderService
 
+<section class="Orders">
 <h3>Orders</h3>
 
 @if (orders == null)
@@ -28,7 +29,7 @@ else
         </div>
     }
 }
-
+</section>
 
 @code {
     List<OrderOverviewResponse> orders = null;
